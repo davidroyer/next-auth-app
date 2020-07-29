@@ -7,12 +7,12 @@ const options = {
   // site: process.env.VERCEL_URL,
   site: process.env.NEXTAUTH_URL,
   providers: [
-    Providers.Email({
-      // SMTP connection string or nodemailer configuration object https://nodemailer.com/
-      server: process.env.EMAIL_SERVER,
-      // Email services often only allow sending email from a valid/verified address
-      from: process.env.EMAIL_FROM
-    }),
+    // Providers.Email({
+    //   // SMTP connection string or nodemailer configuration object https://nodemailer.com/
+    //   server: process.env.EMAIL_SERVER,
+    //   // Email services often only allow sending email from a valid/verified address
+    //   from: process.env.EMAIL_FROM
+    // }),
     // When configuring oAuth providers make sure you enabling requesting
     // permission to get the users email address (required to sign in)
     Providers.Google({
